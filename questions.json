@@ -1,0 +1,322 @@
+[
+  {
+    "question": "Which AWS service provides a fully managed environment for developing, training, and deploying machine learning models?",
+    "answers": [
+      "AWS Lambda",
+      "Amazon SageMaker",
+      "Amazon Redshift",
+      "AWS Glue"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "AWS Lambda is for running code in response to events, not for machine learning.",
+      "Amazon SageMaker provides an integrated development environment for ML models.",
+      "Amazon Redshift is a data warehousing solution, not an ML tool.",
+      "AWS Glue is primarily used for ETL, not for ML model development."
+    ]
+  },
+  {
+    "question": "Which service would you use to quickly label large datasets to train machine learning models?",
+    "answers": [
+      "AWS Rekognition",
+      "Amazon SageMaker Ground Truth",
+      "AWS Data Pipeline",
+      "Amazon Comprehend"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "AWS Rekognition is used for image and video analysis.",
+      "Amazon SageMaker Ground Truth helps create and manage large, labeled datasets.",
+      "AWS Data Pipeline is a data orchestration service, not for labeling data.",
+      "Amazon Comprehend is used for natural language processing, not data labeling."
+    ]
+  },
+  {
+    "question": "Which service is most suitable for analyzing large datasets using SQL without the need to manage any infrastructure?",
+    "answers": [
+      "Amazon Aurora",
+      "AWS Glue",
+      "Amazon Athena",
+      "Amazon SageMaker"
+    ],
+    "correct_answer": 2,
+    "explanation": [
+      "Amazon Aurora is a managed relational database, not primarily used for data analysis.",
+      "AWS Glue is an ETL service, not meant for SQL querying.",
+      "Amazon Athena allows you to query large datasets in S3 using SQL.",
+      "Amazon SageMaker is for ML, not SQL-based data analysis."
+    ]
+  },
+  {
+    "question": "Which AWS service can be used to translate text between languages in real-time?",
+    "answers": [
+      "AWS Comprehend",
+      "Amazon Translate",
+      "Amazon Lex",
+      "AWS Polly"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "AWS Comprehend is for natural language processing, not translation.",
+      "Amazon Translate is specifically designed for language translation.",
+      "Amazon Lex is for building conversational interfaces.",
+      "AWS Polly is used for text-to-speech, not translation."
+    ]
+  },
+  {
+    "question": "If you need a service for identifying objects and people in images and videos, which one should you choose?",
+    "answers": [
+      "AWS Polly",
+      "Amazon Rekognition",
+      "AWS Translate",
+      "Amazon Comprehend"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "AWS Polly is for converting text to speech.",
+      "Amazon Rekognition is for image and video analysis.",
+      "AWS Translate is for language translation.",
+      "Amazon Comprehend is for NLP, not image or video analysis."
+    ]
+  },
+  {
+    "question": "Which AWS service can be used to analyze customer sentiment in text data?",
+    "answers": [
+      "Amazon Translate",
+      "AWS Glue",
+      "Amazon Comprehend",
+      "Amazon Lex"
+    ],
+    "correct_answer": 2,
+    "explanation": [
+      "Amazon Translate is for translating text between languages, not sentiment analysis.",
+      "AWS Glue is used for ETL processes, not sentiment analysis.",
+      "Amazon Comprehend is designed for NLP tasks, including sentiment analysis.",
+      "Amazon Lex is used to create conversational chatbots, not for sentiment analysis."
+    ]
+  },
+  {
+    "question": "Which AWS service can you use to create a conversational interface for a chatbot?",
+    "answers": [
+      "Amazon Translate",
+      "Amazon Lex",
+      "Amazon Comprehend",
+      "AWS Polly"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "Amazon Translate is for translating text.",
+      "Amazon Lex is used to build conversational interfaces and chatbots.",
+      "Amazon Comprehend is used for natural language processing tasks.",
+      "AWS Polly is used for converting text to speech."
+    ]
+  },
+  {
+    "question": "If you need a managed service for automatically transcribing audio to text, which AWS service would you choose?",
+    "answers": [
+      "AWS Polly",
+      "Amazon Rekognition",
+      "Amazon Transcribe",
+      "Amazon Translate"
+    ],
+    "correct_answer": 2,
+    "explanation": [
+      "AWS Polly is for converting text to speech.",
+      "Amazon Rekognition is for image and video analysis.",
+      "Amazon Transcribe is for converting audio files into text automatically.",
+      "Amazon Translate is for language translation, not transcription."
+    ]
+  },
+  {
+    "question": "Which service provides scalable machine learning model training and the ability to tune models automatically?",
+    "answers": [
+      "Amazon RDS",
+      "AWS Lambda",
+      "Amazon SageMaker",
+      "Amazon EC2"
+    ],
+    "correct_answer": 2,
+    "explanation": [
+      "Amazon RDS is a relational database service, not designed for ML training.",
+      "AWS Lambda is used to run code without managing servers, not for ML training.",
+      "Amazon SageMaker provides scalable ML model training and automatic model tuning.",
+      "Amazon EC2 is a virtual server but does not offer dedicated ML model training capabilities."
+    ]
+  },
+  {
+    "question": "Which AWS service would you use to detect fraud in financial transactions using machine learning?",
+    "answers": [
+      "Amazon Rekognition",
+      "Amazon SageMaker",
+      "Amazon Fraud Detector",
+      "Amazon Comprehend"
+    ],
+    "correct_answer": 2,
+    "explanation": [
+      "Amazon Rekognition is for image and video analysis, not fraud detection.",
+      "Amazon SageMaker can build custom ML models but doesn't specialize in fraud detection.",
+      "Amazon Fraud Detector is designed to identify potentially fraudulent transactions.",
+      "Amazon Comprehend is used for NLP, not fraud detection."
+    ]
+  },
+  {
+    "question": "Which AWS service provides a fully managed platform for accessing and customizing foundation models from leading model providers?",
+    "answers": [
+      "Amazon SageMaker",
+      "AWS Lambda",
+      "Amazon Bedrock",
+      "AWS Glue"
+    ],
+    "correct_answer": 2,
+    "explanation": [
+      "Amazon SageMaker is used for developing and deploying ML models but not specifically for accessing foundation models.",
+      "AWS Lambda is used for running code in response to events, not for foundation model access.",
+      "Amazon Bedrock is a service that provides access to foundation models for customization and deployment.",
+      "AWS Glue is an ETL service and not related to foundation models."
+    ]
+  },
+  {
+    "question": "Which Amazon SageMaker feature allows you to automatically tune hyperparameters for an ML model to improve accuracy?",
+    "answers": [
+      "SageMaker Ground Truth",
+      "SageMaker JumpStart",
+      "SageMaker Model Monitor",
+      "SageMaker Automatic Model Tuning"
+    ],
+    "correct_answer": 3,
+    "explanation": [
+      "SageMaker Ground Truth is for labeling datasets, not model tuning.",
+      "SageMaker JumpStart provides ready-to-use models and notebooks but does not tune models.",
+      "SageMaker Model Monitor helps track model performance, not optimize hyperparameters.",
+      "SageMaker Automatic Model Tuning helps to find the best hyperparameters for ML models."
+    ]
+  },
+  {
+    "question": "Which SageMaker capability would be best for monitoring the performance and quality of a deployed model in real-time?",
+    "answers": [
+      "SageMaker Data Wrangler",
+      "SageMaker Model Monitor",
+      "SageMaker Feature Store",
+      "SageMaker Studio"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "SageMaker Data Wrangler is used for data preparation, not monitoring models.",
+      "SageMaker Model Monitor enables continuous monitoring of deployed models.",
+      "SageMaker Feature Store is for storing and retrieving features, not for model monitoring.",
+      "SageMaker Studio is an integrated development environment, not specifically for model monitoring."
+    ]
+  },
+  {
+    "question": "Which feature of Amazon Bedrock allows you to fine-tune foundation models without needing to manage the underlying infrastructure?",
+    "answers": [
+      "SageMaker Studio",
+      "SageMaker JumpStart",
+      "Bedrock Model Customization",
+      "AWS Glue"
+    ],
+    "correct_answer": 2,
+    "explanation": [
+      "SageMaker Studio is a development environment, not specifically for foundation model customization.",
+      "SageMaker JumpStart provides pre-trained models but is not specific to Bedrock.",
+      "Bedrock Model Customization allows users to fine-tune models without managing infrastructure.",
+      "AWS Glue is an ETL service and does not relate to model customization."
+    ]
+  },
+  {
+    "question": "Which AWS service would you use to deploy a foundation model that can perform various tasks like summarization, classification, and Q&A?",
+    "answers": [
+      "Amazon Bedrock",
+      "Amazon SageMaker Ground Truth",
+      "Amazon Transcribe",
+      "Amazon Lex"
+    ],
+    "correct_answer": 0,
+    "explanation": [
+      "Amazon Bedrock is used for deploying and customizing foundation models for tasks like summarization and Q&A.",
+      "Amazon SageMaker Ground Truth is for data labeling, not model deployment.",
+      "Amazon Transcribe is used for audio-to-text transcription, not general model tasks.",
+      "Amazon Lex is for building chatbots, not foundation model deployment."
+    ]
+  },
+  {
+    "question": "If you need to preprocess large datasets within Amazon SageMaker, which feature would be most suitable?",
+    "answers": [
+      "SageMaker Ground Truth",
+      "SageMaker Data Wrangler",
+      "SageMaker Model Monitor",
+      "SageMaker Feature Store"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "SageMaker Ground Truth is for labeling data, not preprocessing.",
+      "SageMaker Data Wrangler provides tools for cleaning, transforming, and analyzing large datasets.",
+      "SageMaker Model Monitor is used for monitoring deployed models, not data preprocessing.",
+      "SageMaker Feature Store is used for storing and managing features."
+    ]
+  },
+  {
+    "question": "Which SageMaker feature provides a fully integrated environment for end-to-end machine learning development?",
+    "answers": [
+      "SageMaker Studio",
+      "SageMaker Ground Truth",
+      "SageMaker Feature Store",
+      "AWS Glue"
+    ],
+    "correct_answer": 0,
+    "explanation": [
+      "SageMaker Studio is a comprehensive environment for ML development and deployment.",
+      "SageMaker Ground Truth is for data labeling, not a full ML environment.",
+      "SageMaker Feature Store manages features but is not an integrated development environment.",
+      "AWS Glue is an ETL service and not part of the ML development workflow."
+    ]
+  },
+  {
+    "question": "Which AWS service would you use to create synthetic datasets for machine learning model training?",
+    "answers": [
+      "Amazon SageMaker Data Wrangler",
+      "Amazon Bedrock",
+      "Amazon SageMaker Ground Truth Plus",
+      "Amazon Comprehend"
+    ],
+    "correct_answer": 2,
+    "explanation": [
+      "Amazon SageMaker Data Wrangler is used for data preparation but not for creating synthetic datasets.",
+      "Amazon Bedrock provides foundation models but does not generate synthetic data.",
+      "Amazon SageMaker Ground Truth Plus offers capabilities for synthetic data generation and labeling.",
+      "Amazon Comprehend is for natural language processing, not synthetic data creation."
+    ]
+  },
+  {
+    "question": "Which Amazon Bedrock feature helps you deploy pre-trained foundation models for language understanding and text generation?",
+    "answers": [
+      "SageMaker JumpStart",
+      "Bedrock Model Deployment",
+      "AWS Glue",
+      "Amazon Translate"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "SageMaker JumpStart provides pre-built ML solutions but does not specifically manage foundation model deployment.",
+      "Bedrock Model Deployment allows you to deploy foundation models for tasks like text generation and language understanding.",
+      "AWS Glue is an ETL service, not involved in deploying language models.",
+      "Amazon Translate is used for translating text, not for deploying foundation models."
+    ]
+  },
+  {
+    "question": "Which SageMaker feature allows users to store and retrieve machine learning features for model training and inference?",
+    "answers": [
+      "SageMaker Studio",
+      "SageMaker Feature Store",
+      "SageMaker Model Monitor",
+      "Amazon RDS"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "SageMaker Studio is an ML development environment, not a feature repository.",
+      "SageMaker Feature Store allows you to store and retrieve features for ML training and inference.",
+      "SageMaker Model Monitor is for monitoring model performance, not storing features.",
+      "Amazon RDS is a relational database, not a feature store for ML models."
+    ]
+  }
+]

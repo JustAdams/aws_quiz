@@ -1,0 +1,82 @@
+import { Button, VerticalBox, GridBox } from "std-widgets.slint";
+
+export component AppWindow inherits Window {
+
+    in-out property <string> question;
+    in-out property <string> answer_0;
+    in-out property <string> answer_1;
+    in-out property <string> answer_2;
+    in-out property <string> answer_3;
+    in-out property <string> explanation;
+    in property <int> counter;
+    always-on-top: true;
+    answer-0: "first answer";
+    answer-1: "second answer";
+    answer-2: "third answer";
+    answer-3: "fourth answer";
+    question: "the question";
+    callback select_answer(int);
+
+    GridLayout {
+        padding: 10px;
+        question-text := Text {
+            col: 0;
+            horizontal-alignment: TextHorizontalAlignment.center;
+            vertical-alignment: TextVerticalAlignment.center;
+            stroke-style: TextStrokeStyle.center;
+            text: question;
+        }
+
+        score := Text {
+            col: 1;
+            font-size: 15px;
+            horizontal-alignment: TextHorizontalAlignment.right;
+            text: "correct: " + counter;
+            vertical-alignment: TextVerticalAlignment.top;
+            wrap: TextWrap.word-wrap;
+        }
+    
+        Button {
+            text: answer_0;
+            row: 1;
+            col: 0;
+            clicked => {
+                root.select_answer(0);
+            }
+        }
+        Button {
+            text: answer_1;
+            row: 1;
+            accessible-role: AccessibleRole.checkbox;
+            col: 1;
+            clicked => {
+                root.select_answer(1);
+            }
+        }
+
+        Button {
+            text: answer_2;
+            row: 2;
+            col: 0;
+            clicked => {
+                root.select_answer(2);
+            }
+        }
+        Button {
+            text: answer_3;
+            row: 2;
+            col: 1;
+            clicked => {
+                root.select_answer(3);
+            }
+        }
+    
+
+        explanation-txt := Text {
+            row: 3;
+            horizontal-alignment: TextHorizontalAlignment.center;
+            vertical-alignment: TextVerticalAlignment.center;
+            text: explanation;
+        }
+    }
+}
