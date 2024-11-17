@@ -1,4 +1,4 @@
-import { Button, VerticalBox, GridBox } from "std-widgets.slint";
+import { Button, VerticalBox, GridBox, LineEdit, ProgressIndicator } from "std-widgets.slint";
 
 export component AppWindow inherits Window {
 
@@ -8,6 +8,7 @@ export component AppWindow inherits Window {
     in-out property <string> answer_2;
     in-out property <string> answer_3;
     in-out property <string> explanation;
+    in-out property <float> progress: 0.0;
     in property <int> counter;
     always-on-top: true;
     answer-0: "first answer";
@@ -20,7 +21,8 @@ export component AppWindow inherits Window {
     GridLayout {
         padding: 10px;
         question-text := Text {
-            col: 0;
+            row: 1;
+            colspan: 2;
             font-size: 30px;
             horizontal-alignment: TextHorizontalAlignment.center;
             vertical-alignment: TextVerticalAlignment.center;
@@ -28,50 +30,61 @@ export component AppWindow inherits Window {
             text: question;
         }
 
-        score := Text {
-            col: 1;
-            font-size: 15px;
-            horizontal-alignment: TextHorizontalAlignment.right;
-            text: "correct: " + counter;
-            vertical-alignment: TextVerticalAlignment.top;
-            wrap: TextWrap.word-wrap;
-        }
-    
-        Button {
-            text: answer_0;
-            row: 1;
-            col: 0;
-            clicked => {
-                root.select_answer(0);
+        VerticalLayout {
+            colspan: 2;
+            row: 0;
+            score := Text {
+                font-size: 15px;
+                text: "correct: " + counter;
+                vertical-alignment: TextVerticalAlignment.top;
+                wrap: TextWrap.word-wrap;
             }
-        }
-        Button {
-            text: answer_1;
-            row: 1;
-            accessible-role: AccessibleRole.checkbox;
-            col: 1;
-            clicked => {
-                root.select_answer(1);
+
+            ProgressIndicator {
+                progress: root.progress;
             }
         }
 
-        Button {
-            text: answer_2;
+        GridLayout {
             row: 2;
-            col: 0;
-            clicked => {
-                root.select_answer(2);
+            colspan: 2;
+            Button {
+                text: answer_0;
+                row: 0;
+                col: 0;
+                clicked => {
+                    root.select_answer(0);
+                }
+            }
+
+            Button {
+                text: answer_1;
+                row: 0;
+                accessible-role: AccessibleRole.checkbox;
+                col: 1;
+                clicked => {
+                    root.select_answer(1);
+                }
+            }
+
+            Button {
+                text: answer_2;
+                row: 1;
+                col: 0;
+                clicked => {
+                    root.select_answer(2);
+                }
+            }
+
+            Button {
+                text: answer_3;
+                row: 1;
+                col: 1;
+                clicked => {
+                    root.select_answer(3);
+                }
             }
         }
-        Button {
-            text: answer_3;
-            row: 2;
-            col: 1;
-            clicked => {
-                root.select_answer(3);
-            }
-        }
-    
 
         explanation-txt := Text {
             row: 3;
