@@ -1,322 +1,786 @@
 [
   {
-    "question": "Which AWS service provides a fully managed environment for developing, training, and deploying machine learning models?",
+    "question": "What does the BLEU metric measure in the context of natural language processing?",
     "answers": [
-      "AWS Lambda",
-      "Amazon SageMaker",
-      "Amazon Redshift",
-      "AWS Glue"
+      "The accuracy of a model in classifying text categories",
+      "The similarity between machine-generated text and reference text",
+      "The ability of a model to understand the context of a conversation",
+      "The fluency of spoken language in audio transcription"
     ],
     "correct_answer": 1,
     "explanation": [
-      "AWS Lambda is for running code in response to events, not for machine learning.",
-      "Amazon SageMaker provides an integrated development environment for ML models.",
-      "Amazon Redshift is a data warehousing solution, not an ML tool.",
-      "AWS Glue is primarily used for ETL, not for ML model development."
+      "BLEU does not measure text classification accuracy.",
+      "BLEU measures the similarity between machine-generated text and reference text using n-gram overlaps.",
+      "BLEU does not measure conversational context understanding.",
+      "BLEU is not used for fluency in spoken language transcription."
     ]
   },
   {
-    "question": "Which service would you use to quickly label large datasets to train machine learning models?",
+    "question": "Which evaluation metric is specifically designed to assess the quality of summaries by comparing overlap in recall and precision of text fragments?",
     "answers": [
-      "AWS Rekognition",
-      "Amazon SageMaker Ground Truth",
-      "AWS Data Pipeline",
-      "Amazon Comprehend"
+      "BLEU",
+      "ROUGE",
+      "Perplexity",
+      "WER (Word Error Rate)"
     ],
     "correct_answer": 1,
     "explanation": [
-      "AWS Rekognition is used for image and video analysis.",
-      "Amazon SageMaker Ground Truth helps create and manage large, labeled datasets.",
-      "AWS Data Pipeline is a data orchestration service, not for labeling data.",
-      "Amazon Comprehend is used for natural language processing, not data labeling."
+      "BLEU measures n-gram overlap but is not specifically designed for summarization tasks.",
+      "ROUGE is used for summarization tasks, comparing recall and precision of n-grams, sentences, or sequences.",
+      "Perplexity measures the uncertainty in predicting a sequence, not text summarization.",
+      "WER measures transcription accuracy, not summarization quality."
     ]
   },
   {
-    "question": "Which service is most suitable for analyzing large datasets using SQL without the need to manage any infrastructure?",
+    "question": "Which of the following best describes a key difference between BLEU and ROUGE metrics?",
     "answers": [
-      "Amazon Aurora",
-      "AWS Glue",
-      "Amazon Athena",
-      "Amazon SageMaker"
-    ],
-    "correct_answer": 2,
-    "explanation": [
-      "Amazon Aurora is a managed relational database, not primarily used for data analysis.",
-      "AWS Glue is an ETL service, not meant for SQL querying.",
-      "Amazon Athena allows you to query large datasets in S3 using SQL.",
-      "Amazon SageMaker is for ML, not SQL-based data analysis."
-    ]
-  },
-  {
-    "question": "Which AWS service can be used to translate text between languages in real-time?",
-    "answers": [
-      "AWS Comprehend",
-      "Amazon Translate",
-      "Amazon Lex",
-      "AWS Polly"
+      "BLEU evaluates fluency, while ROUGE evaluates grammatical correctness.",
+      "BLEU focuses on precision, while ROUGE emphasizes recall.",
+      "BLEU is only used for speech-to-text systems, while ROUGE is used for all NLP tasks.",
+      "BLEU evaluates speed of generation, while ROUGE evaluates complexity."
     ],
     "correct_answer": 1,
     "explanation": [
-      "AWS Comprehend is for natural language processing, not translation.",
-      "Amazon Translate is specifically designed for language translation.",
-      "Amazon Lex is for building conversational interfaces.",
-      "AWS Polly is used for text-to-speech, not translation."
+      "BLEU does not explicitly evaluate fluency, and ROUGE is not designed to evaluate grammatical correctness.",
+      "BLEU emphasizes precision in n-gram overlaps, while ROUGE focuses more on recall to ensure important information is retained.",
+      "BLEU is not limited to speech-to-text systems and is commonly used in machine translation, while ROUGE is primarily used in summarization.",
+      "Neither BLEU nor ROUGE measures speed or complexity directly."
     ]
   },
   {
-    "question": "If you need a service for identifying objects and people in images and videos, which one should you choose?",
+    "question": "In which scenario would the ROUGE metric be more appropriate than BLEU?",
     "answers": [
-      "AWS Polly",
-      "Amazon Rekognition",
-      "AWS Translate",
-      "Amazon Comprehend"
+      "Evaluating the fluency of a chatbot conversation",
+      "Assessing the quality of machine-translated text",
+      "Scoring the relevance of machine-generated summaries",
+      "Measuring the semantic similarity between documents"
+    ],
+    "correct_answer": 2,
+    "explanation": [
+      "ROUGE is not designed for evaluating conversational fluency.",
+      "BLEU is more commonly used for assessing the quality of machine-translated text.",
+      "ROUGE is specifically designed for evaluating the quality of machine-generated summaries by comparing overlap with reference summaries.",
+      "ROUGE does not measure semantic similarity; it focuses on textual overlap."
+    ]
+  },
+  {
+    "question": "What type of n-gram overlap does BLEU primarily consider for evaluating machine-generated text?",
+    "answers": [
+      "Only unigram overlap",
+      "Both unigram and higher-order n-gram overlap",
+      "Bigram overlap exclusively",
+      "Sentence-level semantic similarity"
     ],
     "correct_answer": 1,
     "explanation": [
-      "AWS Polly is for converting text to speech.",
-      "Amazon Rekognition is for image and video analysis.",
-      "AWS Translate is for language translation.",
-      "Amazon Comprehend is for NLP, not image or video analysis."
+      "BLEU considers not just unigram but also higher-order n-gram overlaps to evaluate text quality.",
+      "BLEU uses unigram and higher-order n-grams to ensure the output matches reference text structure.",
+      "BLEU is not limited to bigram overlaps.",
+      "BLEU does not evaluate sentence-level semantics; it focuses on textual similarity."
     ]
   },
   {
-    "question": "Which AWS service can be used to analyze customer sentiment in text data?",
+    "question": "What does a high ROUGE-L score indicate in the evaluation of text summaries?",
     "answers": [
-      "Amazon Translate",
-      "AWS Glue",
-      "Amazon Comprehend",
-      "Amazon Lex"
+      "The machine-generated summary has excellent grammatical correctness.",
+      "The summary effectively matches the length of the reference text.",
+      "The summary contains a high overlap of longest common subsequences with the reference summary.",
+      "The generated summary uses advanced vocabulary."
     ],
     "correct_answer": 2,
     "explanation": [
-      "Amazon Translate is for translating text between languages, not sentiment analysis.",
-      "AWS Glue is used for ETL processes, not sentiment analysis.",
-      "Amazon Comprehend is designed for NLP tasks, including sentiment analysis.",
-      "Amazon Lex is used to create conversational chatbots, not for sentiment analysis."
+      "ROUGE-L does not directly measure grammatical correctness.",
+      "ROUGE-L is not concerned with matching the length of the text.",
+      "A high ROUGE-L score indicates a significant overlap in the longest common subsequences between the generated and reference summaries.",
+      "ROUGE-L does not evaluate vocabulary sophistication."
     ]
   },
   {
-    "question": "Which AWS service can you use to create a conversational interface for a chatbot?",
+    "question": "Which of the following is a limitation of the BLEU metric in evaluating text generation models?",
     "answers": [
-      "Amazon Translate",
-      "Amazon Lex",
-      "Amazon Comprehend",
-      "AWS Polly"
+      "BLEU cannot handle multi-reference comparisons.",
+      "BLEU does not consider word order in its calculations.",
+      "BLEU tends to penalize variations in correct but different expressions.",
+      "BLEU is not applicable for evaluating translations."
+    ],
+    "correct_answer": 2,
+    "explanation": [
+      "BLEU can handle multiple reference texts to improve evaluation.",
+      "BLEU does consider word order through n-gram calculations.",
+      "BLEU penalizes variations in expression, even if the meaning is correct, as it relies on n-gram overlaps.",
+      "BLEU is commonly used for evaluating translations."
+    ]
+  },
+  {
+    "question": "Which ROUGE variant focuses on exact matches of bigrams between the machine-generated text and the reference text?",
+    "answers": [
+      "ROUGE-1",
+      "ROUGE-2",
+      "ROUGE-L",
+      "ROUGE-S"
     ],
     "correct_answer": 1,
     "explanation": [
-      "Amazon Translate is for translating text.",
-      "Amazon Lex is used to build conversational interfaces and chatbots.",
-      "Amazon Comprehend is used for natural language processing tasks.",
-      "AWS Polly is used for converting text to speech."
+      "ROUGE-1 evaluates unigram matches.",
+      "ROUGE-2 specifically evaluates bigram matches between generated and reference text.",
+      "ROUGE-L focuses on the longest common subsequence, not bigrams.",
+      "ROUGE-S evaluates skip-bigrams, not exact bigram matches."
     ]
   },
   {
-    "question": "If you need a managed service for automatically transcribing audio to text, which AWS service would you choose?",
+    "question": "What is a foundation model in the context of AI and machine learning?",
     "answers": [
-      "AWS Polly",
-      "Amazon Rekognition",
-      "Amazon Transcribe",
-      "Amazon Translate"
+      "A model specifically trained for image recognition tasks",
+      "A large-scale model pre-trained on diverse data and adaptable to various downstream tasks",
+      "A model designed for running on edge devices with minimal computational power",
+      "A model that uses only rule-based approaches for decision-making"
     ],
-    "correct_answer": 2,
+    "correct_answer": 1,
     "explanation": [
-      "AWS Polly is for converting text to speech.",
-      "Amazon Rekognition is for image and video analysis.",
-      "Amazon Transcribe is for converting audio files into text automatically.",
-      "Amazon Translate is for language translation, not transcription."
+      "Foundation models are not limited to specific tasks like image recognition.",
+      "Foundation models are large-scale, pre-trained on diverse datasets, and adaptable to many tasks like text generation, classification, and summarization.",
+      "Foundation models are computationally intensive and not specifically designed for edge devices.",
+      "Foundation models are based on machine learning and deep learning, not rule-based systems."
     ]
   },
   {
-    "question": "Which service provides scalable machine learning model training and the ability to tune models automatically?",
-    "answers": [
-      "Amazon RDS",
-      "AWS Lambda",
-      "Amazon SageMaker",
-      "Amazon EC2"
-    ],
-    "correct_answer": 2,
-    "explanation": [
-      "Amazon RDS is a relational database service, not designed for ML training.",
-      "AWS Lambda is used to run code without managing servers, not for ML training.",
-      "Amazon SageMaker provides scalable ML model training and automatic model tuning.",
-      "Amazon EC2 is a virtual server but does not offer dedicated ML model training capabilities."
-    ]
-  },
-  {
-    "question": "Which AWS service would you use to detect fraud in financial transactions using machine learning?",
-    "answers": [
-      "Amazon Rekognition",
-      "Amazon SageMaker",
-      "Amazon Fraud Detector",
-      "Amazon Comprehend"
-    ],
-    "correct_answer": 2,
-    "explanation": [
-      "Amazon Rekognition is for image and video analysis, not fraud detection.",
-      "Amazon SageMaker can build custom ML models but doesn't specialize in fraud detection.",
-      "Amazon Fraud Detector is designed to identify potentially fraudulent transactions.",
-      "Amazon Comprehend is used for NLP, not fraud detection."
-    ]
-  },
-  {
-    "question": "Which AWS service provides a fully managed platform for accessing and customizing foundation models from leading model providers?",
+    "question": "Which AWS service provides access to foundation models for tasks like text generation and summarization?",
     "answers": [
       "Amazon SageMaker",
-      "AWS Lambda",
       "Amazon Bedrock",
-      "AWS Glue"
-    ],
-    "correct_answer": 2,
-    "explanation": [
-      "Amazon SageMaker is used for developing and deploying ML models but not specifically for accessing foundation models.",
-      "AWS Lambda is used for running code in response to events, not for foundation model access.",
-      "Amazon Bedrock is a service that provides access to foundation models for customization and deployment.",
-      "AWS Glue is an ETL service and not related to foundation models."
-    ]
-  },
-  {
-    "question": "Which Amazon SageMaker feature allows you to automatically tune hyperparameters for an ML model to improve accuracy?",
-    "answers": [
-      "SageMaker Ground Truth",
-      "SageMaker JumpStart",
-      "SageMaker Model Monitor",
-      "SageMaker Automatic Model Tuning"
-    ],
-    "correct_answer": 3,
-    "explanation": [
-      "SageMaker Ground Truth is for labeling datasets, not model tuning.",
-      "SageMaker JumpStart provides ready-to-use models and notebooks but does not tune models.",
-      "SageMaker Model Monitor helps track model performance, not optimize hyperparameters.",
-      "SageMaker Automatic Model Tuning helps to find the best hyperparameters for ML models."
-    ]
-  },
-  {
-    "question": "Which SageMaker capability would be best for monitoring the performance and quality of a deployed model in real-time?",
-    "answers": [
-      "SageMaker Data Wrangler",
-      "SageMaker Model Monitor",
-      "SageMaker Feature Store",
-      "SageMaker Studio"
+      "AWS Glue",
+      "Amazon Rekognition"
     ],
     "correct_answer": 1,
     "explanation": [
-      "SageMaker Data Wrangler is used for data preparation, not monitoring models.",
-      "SageMaker Model Monitor enables continuous monitoring of deployed models.",
-      "SageMaker Feature Store is for storing and retrieving features, not for model monitoring.",
-      "SageMaker Studio is an integrated development environment, not specifically for model monitoring."
+      "Amazon SageMaker provides tools for developing custom machine learning models but does not specialize in foundation models.",
+      "Amazon Bedrock provides access to foundation models for a variety of tasks such as text generation and summarization.",
+      "AWS Glue is for ETL processes and not related to foundation models.",
+      "Amazon Rekognition is for image and video analysis, not text or foundation models."
     ]
   },
   {
-    "question": "Which feature of Amazon Bedrock allows you to fine-tune foundation models without needing to manage the underlying infrastructure?",
+    "question": "Which of the following is a key benefit of using foundation models in machine learning workflows?",
     "answers": [
-      "SageMaker Studio",
-      "SageMaker JumpStart",
-      "Bedrock Model Customization",
-      "AWS Glue"
+      "They require no training data for customization.",
+      "They reduce the need for large-scale training by leveraging pre-trained capabilities.",
+      "They are optimized for specific, narrow use cases only.",
+      "They eliminate the need for model monitoring after deployment."
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "Foundation models can still benefit from fine-tuning with additional training data.",
+      "Foundation models significantly reduce the need for large-scale training by being pre-trained on diverse datasets.",
+      "Foundation models are versatile and adaptable to a variety of tasks, not limited to narrow use cases.",
+      "Model monitoring remains important for deployed foundation models, especially to detect drift or bias."
+    ]
+  },
+  {
+    "question": "What is an example of a task that foundation models are commonly used for?",
+    "answers": [
+      "Audio transcription",
+      "Image labeling",
+      "Text summarization",
+      "Database indexing"
     ],
     "correct_answer": 2,
     "explanation": [
-      "SageMaker Studio is a development environment, not specifically for foundation model customization.",
-      "SageMaker JumpStart provides pre-trained models but is not specific to Bedrock.",
-      "Bedrock Model Customization allows users to fine-tune models without managing infrastructure.",
-      "AWS Glue is an ETL service and does not relate to model customization."
+      "Audio transcription typically uses specialized models like Amazon Transcribe.",
+      "Image labeling is often performed using computer vision models like those in Amazon Rekognition.",
+      "Text summarization is a common task for foundation models trained on large language datasets.",
+      "Database indexing is not typically related to foundation models."
     ]
   },
   {
-    "question": "Which AWS service would you use to deploy a foundation model that can perform various tasks like summarization, classification, and Q&A?",
+    "question": "Which characteristic best defines foundation models compared to traditional machine learning models?",
     "answers": [
-      "Amazon Bedrock",
-      "Amazon SageMaker Ground Truth",
-      "Amazon Transcribe",
-      "Amazon Lex"
+      "They are smaller and optimized for edge computing.",
+      "They are pre-trained on large, diverse datasets and can be adapted for multiple tasks.",
+      "They are rule-based systems requiring no training data.",
+      "They are exclusively used for supervised learning tasks."
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "Foundation models are typically large and require significant computational resources, not designed for edge computing.",
+      "Foundation models are pre-trained on diverse data and can be fine-tuned or adapted for various downstream tasks.",
+      "Foundation models are based on deep learning, not rule-based systems.",
+      "Foundation models support supervised, unsupervised, and reinforcement learning tasks."
+    ]
+  },
+  {
+    "question": "What does fine-tuning a foundation model involve?",
+    "answers": [
+      "Training a model from scratch using domain-specific data",
+      "Adding additional layers to the model architecture",
+      "Updating the weights of the pre-trained model using task-specific data",
+      "Reducing the model size to make it suitable for edge devices"
+    ],
+    "correct_answer": 2,
+    "explanation": [
+      "Fine-tuning does not involve training from scratch but builds on the pre-trained model.",
+      "Fine-tuning focuses on weight updates rather than architectural changes.",
+      "Fine-tuning involves using task-specific data to adapt the model for a particular task.",
+      "Fine-tuning does not involve reducing model size; that would require optimization techniques like pruning or quantization."
+    ]
+  },
+  {
+    "question": "Which of the following is a challenge associated with using foundation models?",
+    "answers": [
+      "They cannot be fine-tuned for specific use cases.",
+      "They are often resource-intensive and require significant computational power.",
+      "They lack the ability to generalize across multiple tasks.",
+      "They are not compatible with cloud-based deployment environments."
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "Foundation models can be fine-tuned for specific use cases.",
+      "Foundation models are resource-intensive, requiring significant compute and memory resources.",
+      "Foundation models are designed to generalize across multiple tasks due to pre-training on diverse datasets.",
+      "Foundation models are commonly deployed in cloud environments like AWS Bedrock."
+    ]
+  },
+  {
+    "question": "Which foundational technology underpins most foundation models in use today?",
+    "answers": [
+      "Support Vector Machines",
+      "Convolutional Neural Networks",
+      "Transformers",
+      "Random Forests"
+    ],
+    "correct_answer": 2,
+    "explanation": [
+      "Support Vector Machines are traditional ML algorithms, not used for foundation models.",
+      "Convolutional Neural Networks are primarily used for image-related tasks, not general foundation models.",
+      "Transformers are the foundational architecture for most large language models and foundation models.",
+      "Random Forests are traditional ML models, not foundational for modern foundation models."
+    ]
+  },
+  {
+    "question": "How does Amazon Bedrock simplify the use of foundation models for developers?",
+    "answers": [
+      "By providing APIs to access and integrate pre-trained foundation models without managing infrastructure",
+      "By automatically generating training datasets for custom models",
+      "By deploying models directly on edge devices",
+      "By enabling automatic hyperparameter optimization for any machine learning model"
     ],
     "correct_answer": 0,
     "explanation": [
-      "Amazon Bedrock is used for deploying and customizing foundation models for tasks like summarization and Q&A.",
-      "Amazon SageMaker Ground Truth is for data labeling, not model deployment.",
-      "Amazon Transcribe is used for audio-to-text transcription, not general model tasks.",
-      "Amazon Lex is for building chatbots, not foundation model deployment."
+      "Amazon Bedrock provides APIs to access and use foundation models without requiring infrastructure management or extensive ML expertise.",
+      "Amazon Bedrock does not generate training datasets but allows fine-tuning of foundation models.",
+      "Amazon Bedrock is cloud-focused and not specifically for edge deployments.",
+      "Amazon Bedrock focuses on foundation models, not generic hyperparameter optimization."
     ]
   },
   {
-    "question": "If you need to preprocess large datasets within Amazon SageMaker, which feature would be most suitable?",
+    "question": "What is the primary goal of using foundation models in enterprise applications?",
     "answers": [
-      "SageMaker Ground Truth",
-      "SageMaker Data Wrangler",
-      "SageMaker Model Monitor",
-      "SageMaker Feature Store"
+      "To eliminate the need for training data",
+      "To enable scalable, pre-trained solutions adaptable to various business tasks",
+      "To develop models optimized for a single, narrow use case",
+      "To reduce the overall computational cost of machine learning"
     ],
     "correct_answer": 1,
     "explanation": [
-      "SageMaker Ground Truth is for labeling data, not preprocessing.",
-      "SageMaker Data Wrangler provides tools for cleaning, transforming, and analyzing large datasets.",
-      "SageMaker Model Monitor is used for monitoring deployed models, not data preprocessing.",
-      "SageMaker Feature Store is used for storing and managing features."
+      "Foundation models may still require domain-specific data for fine-tuning.",
+      "The primary goal is to use scalable, pre-trained models that can be adapted for diverse tasks.",
+      "Foundation models are versatile and not limited to single use cases.",
+      "Foundation models may initially be resource-intensive but save development time and effort overall."
     ]
   },
   {
-    "question": "Which SageMaker feature provides a fully integrated environment for end-to-end machine learning development?",
+    "question": "What is AWS Bedrock primarily used for?",
     "answers": [
-      "SageMaker Studio",
-      "SageMaker Ground Truth",
-      "SageMaker Feature Store",
+      "Managing data lakes",
+      "Accessing and integrating foundation models through APIs",
+      "Optimizing AWS infrastructure costs",
+      "Developing custom databases for cloud applications"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "AWS Lake Formation is used for managing data lakes, not AWS Bedrock.",
+      "AWS Bedrock enables developers to access and integrate foundation models like language models and generative AI via APIs.",
+      "AWS Bedrock is not focused on cost optimization; it provides AI/ML capabilities.",
+      "AWS Bedrock is unrelated to database development."
+    ]
+  },
+  {
+    "question": "Which of the following tasks can AWS Bedrock assist with?",
+    "answers": [
+      "Developing machine learning pipelines for custom models",
+      "Generating text using foundation models",
+      "Performing video analysis in real-time",
+      "Building containerized microservices"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "Machine learning pipelines for custom models are developed in Amazon SageMaker, not AWS Bedrock.",
+      "AWS Bedrock facilitates tasks like text generation using pre-trained foundation models.",
+      "Real-time video analysis is better suited for Amazon Rekognition.",
+      "Building microservices is handled by AWS services like ECS and Fargate, not Bedrock."
+    ]
+  },
+  {
+    "question": "What advantage does AWS Bedrock provide to developers using foundation models?",
+    "answers": [
+      "It eliminates the need for model fine-tuning.",
+      "It allows the use of foundation models without managing the underlying infrastructure.",
+      "It offers pre-configured datasets for training custom models.",
+      "It guarantees reduced computational costs for all workloads."
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "Fine-tuning is optional and can still be performed if needed.",
+      "AWS Bedrock allows developers to use foundation models via API without managing infrastructure.",
+      "AWS Bedrock does not provide datasets but supports integration with foundation models.",
+      "While AWS Bedrock streamlines access to foundation models, computational costs depend on workload specifics."
+    ]
+  },
+  {
+    "question": "Which AWS service complements AWS Bedrock for custom machine learning model development and deployment?",
+    "answers": [
+      "Amazon SageMaker",
+      "AWS Lambda",
+      "Amazon DynamoDB",
       "AWS Glue"
     ],
     "correct_answer": 0,
     "explanation": [
-      "SageMaker Studio is a comprehensive environment for ML development and deployment.",
-      "SageMaker Ground Truth is for data labeling, not a full ML environment.",
-      "SageMaker Feature Store manages features but is not an integrated development environment.",
-      "AWS Glue is an ETL service and not part of the ML development workflow."
+      "Amazon SageMaker complements AWS Bedrock by enabling custom model development and deployment alongside foundation models.",
+      "AWS Lambda is for running code in response to events, not for ML model development.",
+      "Amazon DynamoDB is a NoSQL database and unrelated to ML model development.",
+      "AWS Glue is for ETL tasks, not ML model development."
     ]
   },
   {
-    "question": "Which AWS service would you use to create synthetic datasets for machine learning model training?",
+    "question": "How does AWS Bedrock support multi-model usage for businesses?",
     "answers": [
-      "Amazon SageMaker Data Wrangler",
-      "Amazon Bedrock",
-      "Amazon SageMaker Ground Truth Plus",
-      "Amazon Comprehend"
+      "It automatically selects the best model for any use case.",
+      "It offers a unified API to access multiple foundation models from various providers.",
+      "It provides built-in auto-scaling for all supported models.",
+      "It offers a marketplace for custom model sales."
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "AWS Bedrock does not select models; users choose based on their use case.",
+      "AWS Bedrock provides a unified API to access and use multiple foundation models from providers like AI21 Labs, Anthropic, and others.",
+      "While AWS manages infrastructure, specific auto-scaling is not a feature of Bedrock itself.",
+      "AWS Bedrock does not provide a marketplace for selling models."
+    ]
+  },
+  {
+    "question": "What is a key feature of AWS Bedrock that makes it accessible to non-ML experts?",
+    "answers": [
+      "Pre-built workflows for AI applications",
+      "No need to manage or provision infrastructure for model usage",
+      "Code-free tools for building data pipelines",
+      "Built-in real-time data processing capabilities"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "While AWS has tools for workflows, Bedrock focuses on foundation models, not pre-built workflows.",
+      "AWS Bedrock simplifies access to foundation models without requiring users to manage or provision infrastructure.",
+      "Bedrock does not offer code-free data pipeline tools; those are part of AWS Glue.",
+      "Bedrock is not focused on real-time data processing."
+    ]
+  },
+  {
+    "question": "Which of the following is NOT a feature of AWS Bedrock?",
+    "answers": [
+      "Support for multiple foundation models from various providers",
+      "Fine-tuning pre-trained models using your own data",
+      "Automated data labeling for supervised learning",
+      "Integration with AWS services for end-to-end AI solutions"
     ],
     "correct_answer": 2,
     "explanation": [
-      "Amazon SageMaker Data Wrangler is used for data preparation but not for creating synthetic datasets.",
-      "Amazon Bedrock provides foundation models but does not generate synthetic data.",
-      "Amazon SageMaker Ground Truth Plus offers capabilities for synthetic data generation and labeling.",
-      "Amazon Comprehend is for natural language processing, not synthetic data creation."
+      "AWS Bedrock does support multiple foundation models.",
+      "AWS Bedrock allows fine-tuning models using custom data.",
+      "Automated data labeling is not a feature of Bedrock; it is available in Amazon SageMaker Ground Truth.",
+      "Bedrock integrates with AWS services like SageMaker for comprehensive AI solutions."
     ]
   },
   {
-    "question": "Which Amazon Bedrock feature helps you deploy pre-trained foundation models for language understanding and text generation?",
+    "question": "Which of the following foundation model providers are available through AWS Bedrock?",
     "answers": [
-      "SageMaker JumpStart",
-      "Bedrock Model Deployment",
-      "AWS Glue",
-      "Amazon Translate"
+      "AI21 Labs and Anthropic",
+      "Hugging Face and OpenAI",
+      "DeepMind and Microsoft Azure",
+      "Google AI and IBM Watson"
+    ],
+    "correct_answer": 0,
+    "explanation": [
+      "AWS Bedrock includes foundation model providers like AI21 Labs, Anthropic, and others.",
+      "Hugging Face and OpenAI are not directly integrated with AWS Bedrock.",
+      "DeepMind and Microsoft Azure are separate ecosystems and not part of AWS Bedrock.",
+      "Google AI and IBM Watson are competing platforms, not integrated with AWS Bedrock."
+    ]
+  },
+  {
+    "question": "Which foundation model use case is AWS Bedrock particularly suited for?",
+    "answers": [
+      "Real-time fraud detection in financial transactions",
+      "Text-based applications like summarization and question answering",
+      "Video streaming optimization",
+      "Cloud resource management automation"
     ],
     "correct_answer": 1,
     "explanation": [
-      "SageMaker JumpStart provides pre-built ML solutions but does not specifically manage foundation model deployment.",
-      "Bedrock Model Deployment allows you to deploy foundation models for tasks like text generation and language understanding.",
-      "AWS Glue is an ETL service, not involved in deploying language models.",
-      "Amazon Translate is used for translating text, not for deploying foundation models."
+      "Real-time fraud detection typically requires custom models developed in services like SageMaker.",
+      "AWS Bedrock excels at text-based applications leveraging foundation models.",
+      "Video streaming optimization is handled by services like Amazon CloudFront.",
+      "Cloud resource management is unrelated to AWS Bedrock."
     ]
   },
   {
-    "question": "Which SageMaker feature allows users to store and retrieve machine learning features for model training and inference?",
+    "question": "What is a key benefit of AWS Bedrock’s serverless architecture for foundation models?",
+    "answers": [
+      "It eliminates the need for any cost associated with model usage.",
+      "It allows scaling of resources automatically based on usage.",
+      "It provides a user interface for building models without any code.",
+      "It integrates only with Amazon SageMaker."
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "AWS Bedrock incurs costs based on usage; it does not eliminate them.",
+      "AWS Bedrock’s serverless architecture allows automatic scaling, so users pay only for what they use.",
+      "Bedrock focuses on API-based access to foundation models, not a code-free interface for building models.",
+      "Bedrock integrates with multiple AWS services beyond SageMaker."
+    ]
+  },
+  {
+    "question": "What is the primary purpose of Amazon SageMaker?",
+    "answers": [
+      "Storing unstructured data at scale",
+      "Building, training, and deploying machine learning models",
+      "Performing real-time video analysis",
+      "Managing cloud infrastructure for microservices"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "Amazon S3 is used for storing unstructured data, not SageMaker.",
+      "Amazon SageMaker is designed for building, training, and deploying ML models efficiently.",
+      "Amazon Rekognition is used for video analysis, not SageMaker.",
+      "SageMaker focuses on ML, not managing cloud infrastructure for microservices."
+    ]
+  },
+  {
+    "question": "Which feature of SageMaker is specifically designed for model debugging and performance analysis?",
+    "answers": [
+      "SageMaker Model Monitor",
+      "SageMaker Debugger",
+      "SageMaker Ground Truth",
+      "SageMaker Autopilot"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "SageMaker Model Monitor detects data drift in deployed models but is not focused on debugging.",
+      "SageMaker Debugger provides tools for analyzing training metrics and identifying issues during model training.",
+      "SageMaker Ground Truth is for data labeling, not debugging.",
+      "SageMaker Autopilot automates the process of model development but does not focus on debugging."
+    ]
+  },
+  {
+    "question": "What does SageMaker Ground Truth help you with?",
+    "answers": [
+      "Automatically deploying machine learning models",
+      "Labeling data for supervised learning tasks",
+      "Optimizing hyperparameters during training",
+      "Detecting anomalies in streaming data"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "SageMaker Ground Truth does not handle deployment; it is for data labeling.",
+      "Ground Truth simplifies and automates the labeling process for supervised learning tasks.",
+      "Hyperparameter optimization is handled by SageMaker Hyperparameter Tuning.",
+      "Anomaly detection is not a function of SageMaker Ground Truth."
+    ]
+  },
+  {
+    "question": "Which SageMaker feature allows users to automate machine learning workflows?",
     "answers": [
       "SageMaker Studio",
-      "SageMaker Feature Store",
-      "SageMaker Model Monitor",
-      "Amazon RDS"
+      "SageMaker Pipelines",
+      "SageMaker Data Wrangler",
+      "SageMaker Neo"
     ],
     "correct_answer": 1,
     "explanation": [
-      "SageMaker Studio is an ML development environment, not a feature repository.",
-      "SageMaker Feature Store allows you to store and retrieve features for ML training and inference.",
-      "SageMaker Model Monitor is for monitoring model performance, not storing features.",
-      "Amazon RDS is a relational database, not a feature store for ML models."
+      "SageMaker Studio provides an integrated development environment for ML, but it does not automate workflows.",
+      "SageMaker Pipelines automates end-to-end ML workflows, including data preparation, model training, and deployment.",
+      "SageMaker Data Wrangler simplifies data preparation but does not create workflows.",
+      "SageMaker Neo is for model optimization, not workflow automation."
+    ]
+  },
+  {
+    "question": "What is the primary benefit of SageMaker Autopilot?",
+    "answers": [
+      "It optimizes models for edge devices.",
+      "It automatically generates machine learning models and provides explainability.",
+      "It manages real-time model inference at scale.",
+      "It provides large-scale data transformation capabilities."
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "SageMaker Neo optimizes models for edge devices, not Autopilot.",
+      "SageMaker Autopilot automates the creation of machine learning models while offering explainability for model decisions.",
+      "SageMaker Hosting Services manage real-time model inference.",
+      "SageMaker Data Wrangler handles data transformation."
+    ]
+  },
+  {
+    "question": "How does SageMaker Model Monitor help deployed models?",
+    "answers": [
+      "It automatically retrains models when performance degrades.",
+      "It detects data drift and monitors prediction quality.",
+      "It optimizes the model for edge deployment.",
+      "It labels incoming data for real-time tasks."
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "Model Monitor does not retrain models but can trigger alerts for retraining.",
+      "SageMaker Model Monitor tracks data drift and ensures the quality of model predictions.",
+      "Optimizing models for edge deployment is a feature of SageMaker Neo.",
+      "Model Monitor does not label data; Ground Truth handles that task."
+    ]
+  },
+  {
+    "question": "What is SageMaker Neo primarily used for?",
+    "answers": [
+      "Optimizing machine learning models for edge devices",
+      "Training deep learning models on large datasets",
+      "Labeling datasets for supervised learning",
+      "Managing ML workflows and pipelines"
+    ],
+    "correct_answer": 0,
+    "explanation": [
+      "SageMaker Neo optimizes machine learning models for edge deployment and efficient inference.",
+      "Training models is a core SageMaker feature but not specific to Neo.",
+      "Labeling datasets is a task for SageMaker Ground Truth.",
+      "Managing workflows is the focus of SageMaker Pipelines."
+    ]
+  },
+  {
+    "question": "Which feature in SageMaker allows users to collaborate in an integrated development environment?",
+    "answers": [
+      "SageMaker Studio",
+      "SageMaker Ground Truth",
+      "SageMaker Autopilot",
+      "SageMaker Debugger"
+    ],
+    "correct_answer": 0,
+    "explanation": [
+      "SageMaker Studio provides a collaborative IDE for building, training, and deploying models.",
+      "SageMaker Ground Truth focuses on data labeling, not collaboration.",
+      "SageMaker Autopilot automates ML model creation but is not an IDE.",
+      "SageMaker Debugger focuses on debugging training issues, not collaboration."
+    ]
+  },
+  {
+    "question": "What is the purpose of SageMaker Data Wrangler?",
+    "answers": [
+      "To optimize model hyperparameters",
+      "To simplify and automate data preparation",
+      "To provide pre-trained foundation models for NLP tasks",
+      "To monitor data drift in deployed models"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "Optimizing model hyperparameters is a task for SageMaker Hyperparameter Tuning.",
+      "SageMaker Data Wrangler simplifies and automates data preparation for machine learning.",
+      "Providing pre-trained foundation models is a feature of Amazon Bedrock.",
+      "Monitoring data drift is handled by SageMaker Model Monitor."
+    ]
+  },
+  {
+    "question": "Which SageMaker feature supports hyperparameter tuning during training?",
+    "answers": [
+      "SageMaker Studio",
+      "SageMaker Autopilot",
+      "SageMaker Hyperparameter Tuning",
+      "SageMaker Data Wrangler"
+    ],
+    "correct_answer": 2,
+    "explanation": [
+      "SageMaker Studio is an IDE and does not specifically handle hyperparameter tuning.",
+      "SageMaker Autopilot automates model creation but does not focus on tuning hyperparameters.",
+      "SageMaker Hyperparameter Tuning helps optimize the parameters of machine learning models.",
+      "SageMaker Data Wrangler focuses on data preparation, not hyperparameter tuning."
+    ]
+  },
+  {
+    "question": "How does SageMaker Studio Lab differ from SageMaker Studio?",
+    "answers": [
+      "It is a free service for learning and experimentation with no AWS account required.",
+      "It focuses on deploying machine learning models at scale.",
+      "It provides advanced debugging features for production models.",
+      "It is specifically designed for processing streaming data."
+    ],
+    "correct_answer": 0,
+    "explanation": [
+      "SageMaker Studio Lab is a free service aimed at experimentation and learning, requiring no AWS account.",
+      "Studio Lab is not focused on deployment; SageMaker Studio is used for scalable deployment.",
+      "Advanced debugging is a feature of SageMaker Debugger, not Studio Lab.",
+      "SageMaker Studio Lab does not handle streaming data processing."
+    ]
+  },
+  {
+    "question": "What is the primary goal of prompt engineering in AI?",
+    "answers": [
+      "Optimizing neural network architectures",
+      "Designing effective inputs to guide the behavior of language models",
+      "Improving data labeling accuracy",
+      "Enhancing the computational efficiency of training models"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "Optimizing neural network architectures is a task for model developers, not prompt engineering.",
+      "Prompt engineering focuses on crafting effective inputs (prompts) to guide and maximize the performance of language models.",
+      "Data labeling is unrelated to prompt engineering.",
+      "Prompt engineering is not focused on computational efficiency; it targets model outputs."
+    ]
+  },
+  {
+    "question": "Which of the following best describes a prompt in the context of AI models?",
+    "answers": [
+      "A set of hyperparameters used during model training",
+      "An input query or instruction given to a language model",
+      "A pre-trained dataset for fine-tuning models",
+      "A debugging tool for analyzing model outputs"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "Hyperparameters are related to training, not prompts.",
+      "A prompt is the input query or instruction that a language model uses to generate responses.",
+      "Datasets are not considered prompts but are used in training.",
+      "Prompts are not debugging tools; they are designed to interact with models."
+    ]
+  },
+  {
+    "question": "Which of the following is an example of a good prompt for a text summarization task?",
+    "answers": [
+      "Summarize the following text: 'Climate change is affecting ecosystems worldwide.'",
+      "What is the capital of France?",
+      "Translate the following sentence to Spanish: 'Hello, how are you?'",
+      "Provide a detailed analysis of the text below."
+    ],
+    "correct_answer": 0,
+    "explanation": [
+      "The first option is specific and directly requests text summarization, making it a good prompt.",
+      "The second option is a factual query unrelated to summarization.",
+      "The third option is a translation request, not summarization.",
+      "The fourth option lacks specificity and is too broad for a summarization task."
+    ]
+  },
+  {
+    "question": "What is a key principle of effective prompt engineering?",
+    "answers": [
+      "Using ambiguous language to test the model's creativity",
+      "Being clear, specific, and concise in instructions",
+      "Avoiding any form of input formatting",
+      "Maximizing the length of the input prompt for better results"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "Ambiguous language can lead to unpredictable results and is not recommended.",
+      "Effective prompts are clear, specific, and concise to guide the model accurately.",
+      "Proper formatting can enhance the model's understanding of the prompt.",
+      "Longer prompts are not always better and can lead to inefficiencies or confusion."
+    ]
+  },
+  {
+    "question": "What is few-shot learning in the context of prompt engineering?",
+    "answers": [
+      "Training a model with a minimal dataset",
+      "Providing the model with a few examples in the prompt to guide its response",
+      "Using prompts that require minimal computational power",
+      "Testing a model's performance on a small subset of tasks"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "Few-shot learning does not involve training but rather guiding the model with examples.",
+      "Few-shot learning involves embedding a few examples of the task within the prompt to guide the model.",
+      "The concept is unrelated to computational power.",
+      "Few-shot learning is about providing examples in the input, not testing task subsets."
+    ]
+  },
+  {
+    "question": "What is zero-shot learning in prompt engineering?",
+    "answers": [
+      "Training a model without labeled data",
+      "Using a prompt to perform tasks without providing specific examples",
+      "Testing a model's performance with no prior training",
+      "Generating prompts dynamically during model inference"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "Zero-shot learning is not about training; it's about performing tasks without specific examples.",
+      "Zero-shot learning uses prompts that contain only instructions and no task-specific examples.",
+      "The term does not refer to model testing without training.",
+      "Zero-shot learning does not involve dynamic prompt generation."
+    ]
+  },
+  {
+    "question": "How does chain-of-thought prompting improve model responses?",
+    "answers": [
+      "By making the model provide step-by-step reasoning in its output",
+      "By reducing the complexity of the input prompt",
+      "By focusing on numerical computations",
+      "By increasing the randomness in the model’s outputs"
+    ],
+    "correct_answer": 0,
+    "explanation": [
+      "Chain-of-thought prompting encourages the model to break down its reasoning step by step, improving accuracy and clarity.",
+      "It does not reduce prompt complexity; instead, it enhances output clarity.",
+      "Chain-of-thought prompting is not limited to numerical tasks.",
+      "Increasing randomness is not the purpose of this technique."
+    ]
+  },
+  {
+    "question": "Why is prompt formatting important in prompt engineering?",
+    "answers": [
+      "It reduces the time required for model training.",
+      "It helps the model understand the structure and context of the input.",
+      "It ensures the prompt is compatible with all machine learning models.",
+      "It eliminates the need for pre-trained models."
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "Prompt formatting does not impact model training time, as prompts are for inference.",
+      "Proper formatting helps the model interpret the input structure and context accurately.",
+      "Prompts are specific to certain models and tasks, not universally compatible.",
+      "Prompt formatting does not replace the need for pre-trained models."
+    ]
+  },
+  {
+    "question": "What is a typical use case for prompt engineering with foundation models?",
+    "answers": [
+      "Adjusting model hyperparameters for better training results",
+      "Generating creative content, such as stories or poems",
+      "Optimizing hardware utilization during model inference",
+      "Deploying containerized applications in the cloud"
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "Adjusting hyperparameters is unrelated to prompt engineering.",
+      "Prompt engineering is widely used for tasks like generating creative content.",
+      "Hardware optimization is not the focus of prompt engineering.",
+      "Prompt engineering is unrelated to application deployment."
+    ]
+  },
+  {
+    "question": "What role does feedback play in iterative prompt engineering?",
+    "answers": [
+      "It determines the best hyperparameters for the model.",
+      "It helps refine prompts by analyzing the model's output for correctness and relevance.",
+      "It reduces the need for labeled datasets.",
+      "It ensures the prompt follows proper formatting guidelines."
+    ],
+    "correct_answer": 1,
+    "explanation": [
+      "Hyperparameter tuning is not part of iterative prompt engineering.",
+      "Feedback helps refine prompts to improve output quality and relevance.",
+      "Prompt engineering does not eliminate the need for labeled datasets in supervised learning.",
+      "Feedback is broader than just formatting; it focuses on improving output."
     ]
   }
 ]
